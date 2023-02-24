@@ -123,6 +123,7 @@ Options:
 | path[path].[operation].requestBody.[statusCode]  | functions.functions.[http OR httpApi].documentation.methodResponses[statusCode] |
 | path[path].[operation].requestBody.[statusCode].description | functions.functions.[http OR httpApi].documentation.methodResponses[statusCode].responseBody.description |
 | path[path].[operation].requestBody.[statusCode].content | functions.functions.[http OR httpApi].documentation.methodResponses[statusCode].responseModels[contentType] Links to custom.documentation.models.name |
+| path[path].[operation].x-amazon-apigateway-integration              | functions.functions.[http OR httpApi].documentation.x-amazon-apigateway-integration              |
 
 
 ### Configuration
