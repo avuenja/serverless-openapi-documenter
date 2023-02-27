@@ -708,8 +708,10 @@ class DefinitionGenerator {
     if (
       Object.keys(securitySchema).includes("x-amazon-apigateway-authorizer")
     ) {
-      obj["x-amazon-apigateway-authorizer"] =
-        documentation["x-amazon-apigateway-authorizer"];
+      Object.assign(schema, {
+        "x-amazon-apigateway-authorizer":
+          securitySchema["x-amazon-apigateway-authorizer"],
+      });
     }
 
     return schema;
