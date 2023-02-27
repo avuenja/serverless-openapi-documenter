@@ -705,6 +705,13 @@ class DefinitionGenerator {
       Object.assign(schema, { flows: flows });
     } else throw new Error('Security Scheme for "oauth2" requires flows');
 
+    if (
+      Object.keys(securitySchema).includes("x-amazon-apigateway-authorizer")
+    ) {
+      obj["x-amazon-apigateway-authorizer"] =
+        documentation["x-amazon-apigateway-authorizer"];
+    }
+
     return schema;
   }
 

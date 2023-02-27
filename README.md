@@ -395,6 +395,7 @@ The `documentation` section of the event configuration can contain the following
     * `description`: a description of the body response
   * `responseHeaders`: a list of response headers (see [responseHeaders](#responseheaders) below)
   * `responseModels`: a list of models to describe the request bodies (see [responseModels](#responsemodels) below) for each `Content-Type`
+* `x-amazon-apigateway-integration`: The x-amazon-apigateway-integration (see [x-amazon-apigateway-integration](#x-amazon-apigateway-integration) below)
 
 ```yml
 functions:
